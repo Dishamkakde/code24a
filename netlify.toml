@@ -3,6 +3,7 @@
 [build]
   # Directory containing the static site assets (includes index.html with video intro)
   publish = "static"
+  command = "echo 'Static build ready'"
   functions = "netlify/functions"
 
 # Route API endpoints to serverless function

@@ -1994,16 +1994,16 @@
     // when hosted on static CDN (Netlify) without requiring a persistent Python daemon.
     const originalFetch = window.fetch;
     window.fetch = async function(url, options = {}) {
+      const path = typeof url === "string" ? url : (url && url.url) || "";
       try {
         const response = await originalFetch(url, options);
-        if (response.ok || (response.status !== 404 && response.status !== 502)) {
+        const cType = (response.headers.get("content-type") || "").toLowerCase();
+        if (response.ok && (cType.includes("json") || (path.includes("/download") && !cType.includes("html")))) {
           return response;
         }
       } catch (err) {
         // Fallback for offline / static hosting mode
       }
-
-      const path = typeof url === "string" ? url : (url && url.url) || "";
       await new Promise(r => setTimeout(r, 120));
 
       if (path.includes("/api/demo")) {
