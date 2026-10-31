@@ -1469,6 +1469,13 @@
 </head>
 <body class="maren-intro-active">
 
+  <noscript>
+    <style>
+      #marenVideoIntro { display: none !important; }
+      body.maren-intro-active { overflow: auto !important; height: auto !important; }
+    </style>
+  </noscript>
+
   <!-- CINEMATIC VIDEO INTRO SCREEN (FULLSCREEN OVERLAY WITH VOICE) -->
   <aside id="marenVideoIntro" class="maren-intro-overlay" role="dialog" aria-modal="true" aria-label="Welcome">
     <div class="maren-intro-video-wrap">
@@ -1499,7 +1506,14 @@
       </button>
 
       <div style="height:24px;"></div>
-      <div class="maren-intro-center"></div>
+      <div class="maren-intro-center" style="display:flex; flex-direction:column; align-items:center; gap:12px; text-align:center;">
+        <div style="font-family:'Playfair Display',Georgia,serif; font-size:26px; font-weight:700; color:#FFFFFF; letter-spacing:0.18em; text-transform:uppercase; text-shadow:0 2px 12px rgba(0,0,0,0.8);">
+          DAMage CTRL
+        </div>
+        <div style="font-family:'Manrope',sans-serif; font-size:12px; font-weight:600; color:rgba(255,255,255,0.8); letter-spacing:0.12em; text-transform:uppercase; text-shadow:0 1px 8px rgba(0,0,0,0.7);">
+          Find the Flaw. Prove the Fix.
+        </div>
+      </div>
       
       <button id="marenIntroEnterBtn" class="maren-intro-enter-btn" aria-label="Enter website">
         <span class="maren-intro-enter-text">ENTER</span>
