@@ -1,5 +1,5 @@
 import React from 'react';
-import { FileText, Download, Printer, ShieldCheck, CheckCircle2, AlertTriangle, ArrowLeft } from 'lucide-react';
+import { FileText, Download, Printer, ShieldCheck, CheckCircle2, ArrowLeft } from 'lucide-react';
 import type { ProjectInfo, ScanResult } from '../types';
 import { getPatchedZipDownloadUrl, getPrintableReportUrl } from '../api/client';
 

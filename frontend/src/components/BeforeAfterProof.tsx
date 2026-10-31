@@ -1,5 +1,5 @@
 import React from 'react';
-import { ShieldCheck, ShieldAlert, CheckCircle2, XCircle, ArrowRight, Check, AlertTriangle, Sparkles } from 'lucide-react';
+import { CheckCircle2, Check, AlertTriangle } from 'lucide-react';
 import type { Finding } from '../types';
 
 interface BeforeAfterProofProps {

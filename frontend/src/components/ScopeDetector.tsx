@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   FileCode2, Layers, Scan, Loader2, ChevronDown, ChevronUp, 
-  ShieldCheck, Plus, X, Sparkles, Check
+  ShieldCheck, Plus, X, Check
 } from 'lucide-react';
 import type { ProjectInfo } from '../types';
 import { updateProjectFrameworks } from '../api/client';

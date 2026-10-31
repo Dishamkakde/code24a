@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { X, Wrench, CheckCircle2, Shield, ArrowRight, Loader2, AlertCircle, FileDiff } from 'lucide-react';
+import { X, Wrench, ArrowRight, Loader2, FileDiff } from 'lucide-react';
 import type { Finding } from '../types';
 
 interface FixAssistantModalProps {

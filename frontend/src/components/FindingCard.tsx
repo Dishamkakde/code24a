@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { 
-  ShieldAlert, ShieldCheck, AlertCircle, Sparkles, BookOpen, 
+  ShieldCheck, Sparkles, 
   Wrench, CheckCircle2, ChevronDown, ChevronUp, Code2, 
-  HelpCircle, Eye, ArrowRight, Loader2, Database, Lock,
-  ExternalLink, Tag, Shield, Info, Layers
+  ArrowRight, Loader2, 
+  ExternalLink, Shield, Layers
 } from 'lucide-react';
 import type { Finding } from '../types';
 import { BeforeAfterProof } from './BeforeAfterProof';

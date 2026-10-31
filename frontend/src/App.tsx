@@ -13,7 +13,7 @@ import { ProjectHistory } from './components/ProjectHistory';
 import { SecurityReportView } from './components/SecurityReportView';
 import type { ProjectInfo, ScanResult, Finding } from './types';
 import { scanProject, applyPatch, verifyPatch } from './api/client';
-import { ShieldCheck, CheckCircle2, AlertCircle, Sparkles } from 'lucide-react';
+import { CheckCircle2 } from 'lucide-react';
 
 export function App() {
   const [currentTab, setCurrentTab] = useState<'home' | 'projects' | 'learn' | 'reports'>('home');

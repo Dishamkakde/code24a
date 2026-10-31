@@ -2430,8 +2430,9 @@
             state.findings = data.findings;
             state.counts = data.counts;
             renderScanResults();
-            setStep(2);
+            setStep(3);
             step3Section.style.display = "block";
+            step3Section.scrollIntoView({ behavior: "smooth" });
           } else {
             showAlert(data.detail || "Scan failed.");
           }

@@ -57,7 +57,7 @@ export const MarenVideoIntro: React.FC = () => {
       if (videoRef.current) {
         try {
           videoRef.current.pause();
-        } catch (_) {}
+        } catch {}
       }
     }, 800);
   };
